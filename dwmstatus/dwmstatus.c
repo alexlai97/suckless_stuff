@@ -20,6 +20,7 @@
 char *tzargentina = "America/Buenos_Aires";
 char *tzutc = "UTC";
 char *tzberlin = "Europe/Berlin";
+char *tzeastern = "Canada/Eastern_Time"; 
 
 static Display *dpy;
 
@@ -60,7 +61,7 @@ mktimes(char *fmt, char *tzname)
 	time_t tim;
 	struct tm *timtm;
 
-	settz(tzname);
+	//settz(tzname);
 	tim = time(NULL);
 	timtm = localtime(&tim);
 	if (timtm == NULL)
@@ -185,7 +186,7 @@ main(void)
 	char *tmar;
 	char *tmutc;
 	char *tmbln;
-  char *tmca;
+  char *tmeas;
 	char *t0, *t1, *t2;
 
 	if (!(dpy = XOpenDisplay(NULL))) {
@@ -200,14 +201,14 @@ main(void)
 		tmar = mktimes("%H:%M", tzargentina);
 		tmutc = mktimes("%H:%M", tzutc);
 		tmbln = mktimes("KW %W %a %d %b %H:%M %Z %Y", tzberlin);
-    tmca = mktimes("%a %d %b %H:%M", "Canada/Toronto");
+    tmeas = mktimes("%a %b.%d %H:%M", tzeastern);
 		t0 = gettemperature("/sys/devices/virtual/hwmon/hwmon0", "temp1_input");
 		t1 = gettemperature("/sys/devices/virtual/hwmon/hwmon2", "temp1_input");
 		t2 = gettemperature("/sys/devices/virtual/hwmon/hwmon4", "temp1_input");
 
-		status = smprintf("T:%s L:%s B:%s | %s",
-				t0, /*t1, t2,*/ avgs, bat, /*bat1, tmar, tmutc,
-				tmbln*/ tmca);
+		status = smprintf("B:%s | %s",
+				/*t0, t1, t2, avgs, */bat, /*bat1, tmar, tmutc,
+				tmbln*/ tmeas);
 		setstatus(status);
 
 		free(t0);

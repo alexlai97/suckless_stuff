@@ -1,4 +1,4 @@
-cscope 15 /mnt/alex/notmyrepos/st               0000815068
+cscope 15 /mnt/alex/myrepos/suckless_stuff/st               0000815161
 	@arg.h
 
 6 #i‚de‡
@@ -1899,75 +1899,59 @@ NULL
 	gèb•a˚s
  = 8;
 
-86 c⁄° *
-	gcﬁ‹«me
-[] = {
+85 
+	~"/home/Æexœi/.ˇche/wÆ/cﬁ‹s-wÆ-°.h
+"
 
-119 
-	gdeÁu…fg
- = 7;
-
-120 
-	gdeÁu…bg
- = 0;
-
-121 
-	gdeÁu…cs
- = 256;
-
-122 
-	gdeÁu…rcs
- = 257;
-
-131 
+132 
 	gcurs‹sh≠e
  = 7;
 
-137 
+138 
 	gcﬁs
  = 80;
 
-138 
+139 
 	grows
  = 24;
 
-143 
+144 
 	gmou£sh≠e
  = 
 XC_xãrm
 ;
 
-144 
+145 
 	gmou£fg
  = 7;
 
-145 
+146 
 	gmou£bg
  = 0;
 
-151 
+152 
 	gdeÁu…©å
  = 11;
 
-157 
+158 
 Mou£Sh‹tcut
  
 	gmsh‹tcuts
 [] = {
 
-159 { 
+160 { 
 Buâ⁄4
 , 
 XK_ANY_MOD
 , "\031" },
 
-160 { 
+161 { 
 Buâ⁄5
 , 
 XK_ANY_MOD
 , "\005" },
 
-164 
+165 
 	#MODKEY
  
 Mod1Mask
@@ -1975,7 +1959,7 @@ Mod1Mask
 
 	)
 
-165 
+166 
 	#TERMMOD
  (
 C⁄åﬁMask
@@ -1985,13 +1969,13 @@ Shi·Mask
 
 	)
 
-167 
+168 
 Sh‹tcut
  
 	gsh‹tcuts
 [] = {
 
-169 { 
+170 { 
 XK_ANY_MOD
 , 
 XK_Bªak
@@ -2001,7 +1985,7 @@ XK_Bªak
 i
  = 0} },
 
-170 { 
+171 { 
 	gC⁄åﬁMask
 , 
 	gXK_Pröt
@@ -2011,7 +1995,7 @@ i
 	gi
  = 0} },
 
-171 { 
+172 { 
 	gShi·Mask
 , 
 	gXK_Pröt
@@ -2021,7 +2005,7 @@ i
 	gi
  = 0} },
 
-172 { 
+173 { 
 	gXK_ANY_MOD
 , 
 	gXK_Pröt
@@ -2031,7 +2015,7 @@ i
 	gi
  = 0} },
 
-173 { 
+174 { 
 	gTERMMOD
 , 
 	gXK_Pri‹
@@ -2041,7 +2025,7 @@ i
 	gf
  = +1} },
 
-174 { 
+175 { 
 	gTERMMOD
 , 
 	gXK_Next
@@ -2051,7 +2035,7 @@ i
 	gf
  = -1} },
 
-175 { 
+176 { 
 	gTERMMOD
 , 
 	gXK_Home
@@ -2061,7 +2045,7 @@ i
 	gf
  = 0} },
 
-176 { 
+177 { 
 	gTERMMOD
 , 
 	gXK_C
@@ -2071,7 +2055,7 @@ i
 	gi
  = 0} },
 
-177 { 
+178 { 
 	gTERMMOD
 , 
 	gXK_V
@@ -2081,7 +2065,7 @@ i
 	gi
  = 0} },
 
-178 { 
+179 { 
 	gTERMMOD
 , 
 	gXK_Y
@@ -2091,7 +2075,7 @@ i
 	gi
  = 0} },
 
-179 { 
+180 { 
 	gTERMMOD
 , 
 	gXK_Num_Lock
@@ -2101,13 +2085,13 @@ i
 	gi
  = 0} },
 
-211 
+212 
 KeySym
  
 	gm≠≥dkeys
 [] = { -1 };
 
-217 
+218 
 uöt
  
 	gign‹emod
@@ -2117,7 +2101,7 @@ Mod2Mask
 XK_SWITCH_MOD
 ;
 
-224 
+225 
 uöt
  
 	gf‹˚£lmod
@@ -2125,355 +2109,355 @@ uöt
 Shi·Mask
 ;
 
-230 
+231 
 Key
  
 	gkey
 [] = {
 
-232 { 
+233 { 
 XK_KP_Home
 , 
 Shi·Mask
 , "\033[2J", 0, -1},
 
-233 { 
+234 { 
 XK_KP_Home
 , 
 Shi·Mask
 , "\033[1;2H", 0, +1},
 
-234 { 
+235 { 
 XK_KP_Home
 , 
 XK_ANY_MOD
 , "\033[H", 0, -1},
 
-235 { 
+236 { 
 XK_KP_Home
 , 
 XK_ANY_MOD
 , "\033[1~", 0, +1},
 
-236 { 
+237 { 
 XK_KP_Up
 , 
 XK_ANY_MOD
 , "\033Ox", +1, 0},
 
-237 { 
+238 { 
 XK_KP_Up
 , 
 XK_ANY_MOD
 , "\033[A", 0, -1},
 
-238 { 
+239 { 
 XK_KP_Up
 , 
 XK_ANY_MOD
 , "\033OA", 0, +1},
 
-239 { 
+240 { 
 XK_KP_Down
 , 
 XK_ANY_MOD
 , "\033Or", +1, 0},
 
-240 { 
+241 { 
 XK_KP_Down
 , 
 XK_ANY_MOD
 , "\033[B", 0, -1},
 
-241 { 
+242 { 
 XK_KP_Down
 , 
 XK_ANY_MOD
 , "\033OB", 0, +1},
 
-242 { 
+243 { 
 XK_KP_Le·
 , 
 XK_ANY_MOD
 , "\033Ot", +1, 0},
 
-243 { 
+244 { 
 XK_KP_Le·
 , 
 XK_ANY_MOD
 , "\033[D", 0, -1},
 
-244 { 
+245 { 
 XK_KP_Le·
 , 
 XK_ANY_MOD
 , "\033OD", 0, +1},
 
-245 { 
+246 { 
 XK_KP_Right
 , 
 XK_ANY_MOD
 , "\033Ov", +1, 0},
 
-246 { 
+247 { 
 XK_KP_Right
 , 
 XK_ANY_MOD
 , "\033[C", 0, -1},
 
-247 { 
+248 { 
 XK_KP_Right
 , 
 XK_ANY_MOD
 , "\033OC", 0, +1},
 
-248 { 
+249 { 
 XK_KP_Pri‹
 , 
 Shi·Mask
 , "\033[5;2~", 0, 0},
 
-249 { 
+250 { 
 XK_KP_Pri‹
 , 
 XK_ANY_MOD
 , "\033[5~", 0, 0},
 
-250 { 
+251 { 
 XK_KP_Begö
 , 
 XK_ANY_MOD
 , "\033[E", 0, 0},
 
-251 { 
+252 { 
 XK_KP_End
 , 
 C⁄åﬁMask
 , "\033[J", -1, 0},
 
-252 { 
+253 { 
 XK_KP_End
 , 
 C⁄åﬁMask
 , "\033[1;5F", +1, 0},
 
-253 { 
+254 { 
 XK_KP_End
 , 
 Shi·Mask
 , "\033[K", -1, 0},
 
-254 { 
+255 { 
 XK_KP_End
 , 
 Shi·Mask
 , "\033[1;2F", +1, 0},
 
-255 { 
+256 { 
 XK_KP_End
 , 
 XK_ANY_MOD
 , "\033[4~", 0, 0},
 
-256 { 
+257 { 
 XK_KP_Next
 , 
 Shi·Mask
 , "\033[6;2~", 0, 0},
 
-257 { 
+258 { 
 XK_KP_Next
 , 
 XK_ANY_MOD
 , "\033[6~", 0, 0},
 
-258 { 
+259 { 
 XK_KP_In£π
 , 
 Shi·Mask
 , "\033[2;2~", +1, 0},
 
-259 { 
+260 { 
 XK_KP_In£π
 , 
 Shi·Mask
 , "\033[4l", -1, 0},
 
-260 { 
+261 { 
 XK_KP_In£π
 , 
 C⁄åﬁMask
 , "\033[L", -1, 0},
 
-261 { 
+262 { 
 XK_KP_In£π
 , 
 C⁄åﬁMask
 , "\033[2;5~", +1, 0},
 
-262 { 
+263 { 
 XK_KP_In£π
 , 
 XK_ANY_MOD
 , "\033[4h", -1, 0},
 
-263 { 
+264 { 
 XK_KP_In£π
 , 
 XK_ANY_MOD
 , "\033[2~", +1, 0},
 
-264 { 
+265 { 
 XK_KP_Dñëe
 , 
 C⁄åﬁMask
 , "\033[M", -1, 0},
 
-265 { 
+266 { 
 XK_KP_Dñëe
 , 
 C⁄åﬁMask
 , "\033[3;5~", +1, 0},
 
-266 { 
+267 { 
 XK_KP_Dñëe
 , 
 Shi·Mask
 , "\033[2K", -1, 0},
 
-267 { 
+268 { 
 XK_KP_Dñëe
 , 
 Shi·Mask
 , "\033[3;2~", +1, 0},
 
-268 { 
+269 { 
 XK_KP_Dñëe
 , 
 XK_ANY_MOD
 , "\033[P", -1, 0},
 
-269 { 
+270 { 
 XK_KP_Dñëe
 , 
 XK_ANY_MOD
 , "\033[3~", +1, 0},
 
-270 { 
+271 { 
 XK_KP_Mu…ùly
 , 
 XK_ANY_MOD
 , "\033Oj", +2, 0},
 
-271 { 
+272 { 
 XK_KP_Add
 , 
 XK_ANY_MOD
 , "\033Ok", +2, 0},
 
-272 { 
+273 { 
 XK_KP_E¡î
 , 
 XK_ANY_MOD
 , "\033OM", +2, 0},
 
-273 { 
+274 { 
 XK_KP_E¡î
 , 
 XK_ANY_MOD
 , "\r", -1, 0},
 
-274 { 
+275 { 
 XK_KP_Subåa˘
 , 
 XK_ANY_MOD
 , "\033Om", +2, 0},
 
-275 { 
+276 { 
 XK_KP_DecimÆ
 , 
 XK_ANY_MOD
 , "\033On", +2, 0},
 
-276 { 
+277 { 
 XK_KP_Divide
 , 
 XK_ANY_MOD
 , "\033Oo", +2, 0},
 
-277 { 
+278 { 
 XK_KP_0
 , 
 XK_ANY_MOD
 , "\033Op", +2, 0},
 
-278 { 
+279 { 
 XK_KP_1
 , 
 XK_ANY_MOD
 , "\033Oq", +2, 0},
 
-279 { 
+280 { 
 XK_KP_2
 , 
 XK_ANY_MOD
 , "\033Or", +2, 0},
 
-280 { 
+281 { 
 XK_KP_3
 , 
 XK_ANY_MOD
 , "\033Os", +2, 0},
 
-281 { 
+282 { 
 XK_KP_4
 , 
 XK_ANY_MOD
 , "\033Ot", +2, 0},
 
-282 { 
+283 { 
 XK_KP_5
 , 
 XK_ANY_MOD
 , "\033Ou", +2, 0},
 
-283 { 
+284 { 
 XK_KP_6
 , 
 XK_ANY_MOD
 , "\033Ov", +2, 0},
 
-284 { 
+285 { 
 XK_KP_7
 , 
 XK_ANY_MOD
 , "\033Ow", +2, 0},
 
-285 { 
+286 { 
 XK_KP_8
 , 
 XK_ANY_MOD
 , "\033Ox", +2, 0},
 
-286 { 
+287 { 
 XK_KP_9
 , 
 XK_ANY_MOD
 , "\033Oy", +2, 0},
 
-287 { 
+288 { 
 XK_Up
 , 
 Shi·Mask
 , "\033[1;2A", 0, 0},
 
-288 { 
+289 { 
 XK_Up
 , 
 Mod1Mask
 , "\033[1;3A", 0, 0},
 
-289 { 
+290 { 
 XK_Up
 , 
 Shi·Mask
@@ -2481,13 +2465,13 @@ Shi·Mask
 Mod1Mask
 ,"\033[1;4A", 0, 0},
 
-290 { 
+291 { 
 XK_Up
 , 
 C⁄åﬁMask
 , "\033[1;5A", 0, 0},
 
-291 { 
+292 { 
 XK_Up
 , 
 Shi·Mask
@@ -2495,7 +2479,7 @@ Shi·Mask
 C⁄åﬁMask
 ,"\033[1;6A", 0, 0},
 
-292 { 
+293 { 
 XK_Up
 , 
 C⁄åﬁMask
@@ -2503,7 +2487,7 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;7A", 0, 0},
 
-293 { 
+294 { 
 XK_Up
 ,
 Shi·Mask
@@ -2513,31 +2497,31 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;8A", 0, 0},
 
-294 { 
+295 { 
 XK_Up
 , 
 XK_ANY_MOD
 , "\033[A", 0, -1},
 
-295 { 
+296 { 
 XK_Up
 , 
 XK_ANY_MOD
 , "\033OA", 0, +1},
 
-296 { 
+297 { 
 XK_Down
 , 
 Shi·Mask
 , "\033[1;2B", 0, 0},
 
-297 { 
+298 { 
 XK_Down
 , 
 Mod1Mask
 , "\033[1;3B", 0, 0},
 
-298 { 
+299 { 
 XK_Down
 , 
 Shi·Mask
@@ -2545,13 +2529,13 @@ Shi·Mask
 Mod1Mask
 ,"\033[1;4B", 0, 0},
 
-299 { 
+300 { 
 XK_Down
 , 
 C⁄åﬁMask
 , "\033[1;5B", 0, 0},
 
-300 { 
+301 { 
 XK_Down
 , 
 Shi·Mask
@@ -2559,7 +2543,7 @@ Shi·Mask
 C⁄åﬁMask
 ,"\033[1;6B", 0, 0},
 
-301 { 
+302 { 
 XK_Down
 , 
 C⁄åﬁMask
@@ -2567,7 +2551,7 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;7B", 0, 0},
 
-302 { 
+303 { 
 XK_Down
 ,
 Shi·Mask
@@ -2577,31 +2561,31 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;8B",0, 0},
 
-303 { 
+304 { 
 XK_Down
 , 
 XK_ANY_MOD
 , "\033[B", 0, -1},
 
-304 { 
+305 { 
 XK_Down
 , 
 XK_ANY_MOD
 , "\033OB", 0, +1},
 
-305 { 
+306 { 
 XK_Le·
 , 
 Shi·Mask
 , "\033[1;2D", 0, 0},
 
-306 { 
+307 { 
 XK_Le·
 , 
 Mod1Mask
 , "\033[1;3D", 0, 0},
 
-307 { 
+308 { 
 XK_Le·
 , 
 Shi·Mask
@@ -2609,13 +2593,13 @@ Shi·Mask
 Mod1Mask
 ,"\033[1;4D", 0, 0},
 
-308 { 
+309 { 
 XK_Le·
 , 
 C⁄åﬁMask
 , "\033[1;5D", 0, 0},
 
-309 { 
+310 { 
 XK_Le·
 , 
 Shi·Mask
@@ -2623,7 +2607,7 @@ Shi·Mask
 C⁄åﬁMask
 ,"\033[1;6D", 0, 0},
 
-310 { 
+311 { 
 XK_Le·
 , 
 C⁄åﬁMask
@@ -2631,7 +2615,7 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;7D", 0, 0},
 
-311 { 
+312 { 
 XK_Le·
 ,
 Shi·Mask
@@ -2641,31 +2625,31 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;8D",0, 0},
 
-312 { 
+313 { 
 XK_Le·
 , 
 XK_ANY_MOD
 , "\033[D", 0, -1},
 
-313 { 
+314 { 
 XK_Le·
 , 
 XK_ANY_MOD
 , "\033OD", 0, +1},
 
-314 { 
+315 { 
 XK_Right
 , 
 Shi·Mask
 , "\033[1;2C", 0, 0},
 
-315 { 
+316 { 
 XK_Right
 , 
 Mod1Mask
 , "\033[1;3C", 0, 0},
 
-316 { 
+317 { 
 XK_Right
 , 
 Shi·Mask
@@ -2673,13 +2657,13 @@ Shi·Mask
 Mod1Mask
 ,"\033[1;4C", 0, 0},
 
-317 { 
+318 { 
 XK_Right
 , 
 C⁄åﬁMask
 , "\033[1;5C", 0, 0},
 
-318 { 
+319 { 
 XK_Right
 , 
 Shi·Mask
@@ -2687,7 +2671,7 @@ Shi·Mask
 C⁄åﬁMask
 ,"\033[1;6C", 0, 0},
 
-319 { 
+320 { 
 XK_Right
 , 
 C⁄åﬁMask
@@ -2695,7 +2679,7 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;7C", 0, 0},
 
-320 { 
+321 { 
 XK_Right
 ,
 Shi·Mask
@@ -2705,739 +2689,739 @@ C⁄åﬁMask
 Mod1Mask
 ,"\033[1;8C",0, 0},
 
-321 { 
+322 { 
 XK_Right
 , 
 XK_ANY_MOD
 , "\033[C", 0, -1},
 
-322 { 
+323 { 
 XK_Right
 , 
 XK_ANY_MOD
 , "\033OC", 0, +1},
 
-323 { 
+324 { 
 XK_ISO_Le·_Tab
 , 
 Shi·Mask
 , "\033[Z", 0, 0},
 
-324 { 
+325 { 
 XK_Rëu∫
 , 
 Mod1Mask
 , "\033\r", 0, 0},
 
-325 { 
+326 { 
 XK_Rëu∫
 , 
 XK_ANY_MOD
 , "\r", 0, 0},
 
-326 { 
+327 { 
 XK_In£π
 , 
 Shi·Mask
 , "\033[4l", -1, 0},
 
-327 { 
+328 { 
 XK_In£π
 , 
 Shi·Mask
 , "\033[2;2~", +1, 0},
 
-328 { 
+329 { 
 XK_In£π
 , 
 C⁄åﬁMask
 , "\033[L", -1, 0},
 
-329 { 
+330 { 
 XK_In£π
 , 
 C⁄åﬁMask
 , "\033[2;5~", +1, 0},
 
-330 { 
+331 { 
 XK_In£π
 , 
 XK_ANY_MOD
 , "\033[4h", -1, 0},
 
-331 { 
+332 { 
 XK_In£π
 , 
 XK_ANY_MOD
 , "\033[2~", +1, 0},
 
-332 { 
+333 { 
 XK_Dñëe
 , 
 C⁄åﬁMask
 , "\033[M", -1, 0},
 
-333 { 
+334 { 
 XK_Dñëe
 , 
 C⁄åﬁMask
 , "\033[3;5~", +1, 0},
 
-334 { 
+335 { 
 XK_Dñëe
 , 
 Shi·Mask
 , "\033[2K", -1, 0},
 
-335 { 
+336 { 
 XK_Dñëe
 , 
 Shi·Mask
 , "\033[3;2~", +1, 0},
 
-336 { 
+337 { 
 XK_Dñëe
 , 
 XK_ANY_MOD
 , "\033[P", -1, 0},
 
-337 { 
+338 { 
 XK_Dñëe
 , 
 XK_ANY_MOD
 , "\033[3~", +1, 0},
 
-338 { 
+339 { 
 XK_BackS∑˚
 , 
 XK_NO_MOD
 , "\177", 0, 0},
 
-339 { 
+340 { 
 XK_BackS∑˚
 , 
 Mod1Mask
 , "\033\177", 0, 0},
 
-340 { 
+341 { 
 XK_Home
 , 
 Shi·Mask
 , "\033[2J", 0, -1},
 
-341 { 
+342 { 
 XK_Home
 , 
 Shi·Mask
 , "\033[1;2H", 0, +1},
 
-342 { 
+343 { 
 XK_Home
 , 
 XK_ANY_MOD
 , "\033[H", 0, -1},
 
-343 { 
+344 { 
 XK_Home
 , 
 XK_ANY_MOD
 , "\033[1~", 0, +1},
 
-344 { 
+345 { 
 XK_End
 , 
 C⁄åﬁMask
 , "\033[J", -1, 0},
 
-345 { 
+346 { 
 XK_End
 , 
 C⁄åﬁMask
 , "\033[1;5F", +1, 0},
 
-346 { 
+347 { 
 XK_End
 , 
 Shi·Mask
 , "\033[K", -1, 0},
 
-347 { 
+348 { 
 XK_End
 , 
 Shi·Mask
 , "\033[1;2F", +1, 0},
 
-348 { 
+349 { 
 XK_End
 , 
 XK_ANY_MOD
 , "\033[4~", 0, 0},
 
-349 { 
+350 { 
 XK_Pri‹
 , 
 C⁄åﬁMask
 , "\033[5;5~", 0, 0},
 
-350 { 
+351 { 
 XK_Pri‹
 , 
 Shi·Mask
 , "\033[5;2~", 0, 0},
 
-351 { 
+352 { 
 XK_Pri‹
 , 
 XK_ANY_MOD
 , "\033[5~", 0, 0},
 
-352 { 
+353 { 
 XK_Next
 , 
 C⁄åﬁMask
 , "\033[6;5~", 0, 0},
 
-353 { 
+354 { 
 XK_Next
 , 
 Shi·Mask
 , "\033[6;2~", 0, 0},
 
-354 { 
+355 { 
 XK_Next
 , 
 XK_ANY_MOD
 , "\033[6~", 0, 0},
 
-355 { 
+356 { 
 XK_F1
 , 
 XK_NO_MOD
 , "\033OP" , 0, 0},
 
-356 { 
+357 { 
 XK_F1
 , 
 Shi·Mask
 , "\033[1;2P", 0, 0},
 
-357 { 
+358 { 
 XK_F1
 , 
 C⁄åﬁMask
 , "\033[1;5P", 0, 0},
 
-358 { 
+359 { 
 XK_F1
 , 
 Mod4Mask
 , "\033[1;6P", 0, 0},
 
-359 { 
+360 { 
 XK_F1
 , 
 Mod1Mask
 , "\033[1;3P", 0, 0},
 
-360 { 
+361 { 
 XK_F1
 , 
 Mod3Mask
 , "\033[1;4P", 0, 0},
 
-361 { 
+362 { 
 XK_F2
 , 
 XK_NO_MOD
 , "\033OQ" , 0, 0},
 
-362 { 
+363 { 
 XK_F2
 , 
 Shi·Mask
 , "\033[1;2Q", 0, 0},
 
-363 { 
+364 { 
 XK_F2
 , 
 C⁄åﬁMask
 , "\033[1;5Q", 0, 0},
 
-364 { 
+365 { 
 XK_F2
 , 
 Mod4Mask
 , "\033[1;6Q", 0, 0},
 
-365 { 
+366 { 
 XK_F2
 , 
 Mod1Mask
 , "\033[1;3Q", 0, 0},
 
-366 { 
+367 { 
 XK_F2
 , 
 Mod3Mask
 , "\033[1;4Q", 0, 0},
 
-367 { 
+368 { 
 XK_F3
 , 
 XK_NO_MOD
 , "\033OR" , 0, 0},
 
-368 { 
+369 { 
 XK_F3
 , 
 Shi·Mask
 , "\033[1;2R", 0, 0},
 
-369 { 
+370 { 
 XK_F3
 , 
 C⁄åﬁMask
 , "\033[1;5R", 0, 0},
 
-370 { 
+371 { 
 XK_F3
 , 
 Mod4Mask
 , "\033[1;6R", 0, 0},
 
-371 { 
+372 { 
 XK_F3
 , 
 Mod1Mask
 , "\033[1;3R", 0, 0},
 
-372 { 
+373 { 
 XK_F3
 , 
 Mod3Mask
 , "\033[1;4R", 0, 0},
 
-373 { 
+374 { 
 XK_F4
 , 
 XK_NO_MOD
 , "\033OS" , 0, 0},
 
-374 { 
+375 { 
 XK_F4
 , 
 Shi·Mask
 , "\033[1;2S", 0, 0},
 
-375 { 
+376 { 
 XK_F4
 , 
 C⁄åﬁMask
 , "\033[1;5S", 0, 0},
 
-376 { 
+377 { 
 XK_F4
 , 
 Mod4Mask
 , "\033[1;6S", 0, 0},
 
-377 { 
+378 { 
 XK_F4
 , 
 Mod1Mask
 , "\033[1;3S", 0, 0},
 
-378 { 
+379 { 
 XK_F5
 , 
 XK_NO_MOD
 , "\033[15~", 0, 0},
 
-379 { 
+380 { 
 XK_F5
 , 
 Shi·Mask
 , "\033[15;2~", 0, 0},
 
-380 { 
+381 { 
 XK_F5
 , 
 C⁄åﬁMask
 , "\033[15;5~", 0, 0},
 
-381 { 
+382 { 
 XK_F5
 , 
 Mod4Mask
 , "\033[15;6~", 0, 0},
 
-382 { 
+383 { 
 XK_F5
 , 
 Mod1Mask
 , "\033[15;3~", 0, 0},
 
-383 { 
+384 { 
 XK_F6
 , 
 XK_NO_MOD
 , "\033[17~", 0, 0},
 
-384 { 
+385 { 
 XK_F6
 , 
 Shi·Mask
 , "\033[17;2~", 0, 0},
 
-385 { 
+386 { 
 XK_F6
 , 
 C⁄åﬁMask
 , "\033[17;5~", 0, 0},
 
-386 { 
+387 { 
 XK_F6
 , 
 Mod4Mask
 , "\033[17;6~", 0, 0},
 
-387 { 
+388 { 
 XK_F6
 , 
 Mod1Mask
 , "\033[17;3~", 0, 0},
 
-388 { 
+389 { 
 XK_F7
 , 
 XK_NO_MOD
 , "\033[18~", 0, 0},
 
-389 { 
+390 { 
 XK_F7
 , 
 Shi·Mask
 , "\033[18;2~", 0, 0},
 
-390 { 
+391 { 
 XK_F7
 , 
 C⁄åﬁMask
 , "\033[18;5~", 0, 0},
 
-391 { 
+392 { 
 XK_F7
 , 
 Mod4Mask
 , "\033[18;6~", 0, 0},
 
-392 { 
+393 { 
 XK_F7
 , 
 Mod1Mask
 , "\033[18;3~", 0, 0},
 
-393 { 
+394 { 
 XK_F8
 , 
 XK_NO_MOD
 , "\033[19~", 0, 0},
 
-394 { 
+395 { 
 XK_F8
 , 
 Shi·Mask
 , "\033[19;2~", 0, 0},
 
-395 { 
+396 { 
 XK_F8
 , 
 C⁄åﬁMask
 , "\033[19;5~", 0, 0},
 
-396 { 
+397 { 
 XK_F8
 , 
 Mod4Mask
 , "\033[19;6~", 0, 0},
 
-397 { 
+398 { 
 XK_F8
 , 
 Mod1Mask
 , "\033[19;3~", 0, 0},
 
-398 { 
+399 { 
 XK_F9
 , 
 XK_NO_MOD
 , "\033[20~", 0, 0},
 
-399 { 
+400 { 
 XK_F9
 , 
 Shi·Mask
 , "\033[20;2~", 0, 0},
 
-400 { 
+401 { 
 XK_F9
 , 
 C⁄åﬁMask
 , "\033[20;5~", 0, 0},
 
-401 { 
+402 { 
 XK_F9
 , 
 Mod4Mask
 , "\033[20;6~", 0, 0},
 
-402 { 
+403 { 
 XK_F9
 , 
 Mod1Mask
 , "\033[20;3~", 0, 0},
 
-403 { 
+404 { 
 XK_F10
 , 
 XK_NO_MOD
 , "\033[21~", 0, 0},
 
-404 { 
+405 { 
 XK_F10
 , 
 Shi·Mask
 , "\033[21;2~", 0, 0},
 
-405 { 
+406 { 
 XK_F10
 , 
 C⁄åﬁMask
 , "\033[21;5~", 0, 0},
 
-406 { 
+407 { 
 XK_F10
 , 
 Mod4Mask
 , "\033[21;6~", 0, 0},
 
-407 { 
+408 { 
 XK_F10
 , 
 Mod1Mask
 , "\033[21;3~", 0, 0},
 
-408 { 
+409 { 
 XK_F11
 , 
 XK_NO_MOD
 , "\033[23~", 0, 0},
 
-409 { 
+410 { 
 XK_F11
 , 
 Shi·Mask
 , "\033[23;2~", 0, 0},
 
-410 { 
+411 { 
 XK_F11
 , 
 C⁄åﬁMask
 , "\033[23;5~", 0, 0},
 
-411 { 
+412 { 
 XK_F11
 , 
 Mod4Mask
 , "\033[23;6~", 0, 0},
 
-412 { 
+413 { 
 XK_F11
 , 
 Mod1Mask
 , "\033[23;3~", 0, 0},
 
-413 { 
+414 { 
 XK_F12
 , 
 XK_NO_MOD
 , "\033[24~", 0, 0},
 
-414 { 
+415 { 
 XK_F12
 , 
 Shi·Mask
 , "\033[24;2~", 0, 0},
 
-415 { 
+416 { 
 XK_F12
 , 
 C⁄åﬁMask
 , "\033[24;5~", 0, 0},
 
-416 { 
+417 { 
 XK_F12
 , 
 Mod4Mask
 , "\033[24;6~", 0, 0},
 
-417 { 
+418 { 
 XK_F12
 , 
 Mod1Mask
 , "\033[24;3~", 0, 0},
 
-418 { 
+419 { 
 XK_F13
 , 
 XK_NO_MOD
 , "\033[1;2P", 0, 0},
 
-419 { 
+420 { 
 XK_F14
 , 
 XK_NO_MOD
 , "\033[1;2Q", 0, 0},
 
-420 { 
+421 { 
 XK_F15
 , 
 XK_NO_MOD
 , "\033[1;2R", 0, 0},
 
-421 { 
+422 { 
 XK_F16
 , 
 XK_NO_MOD
 , "\033[1;2S", 0, 0},
 
-422 { 
+423 { 
 XK_F17
 , 
 XK_NO_MOD
 , "\033[15;2~", 0, 0},
 
-423 { 
+424 { 
 XK_F18
 , 
 XK_NO_MOD
 , "\033[17;2~", 0, 0},
 
-424 { 
+425 { 
 XK_F19
 , 
 XK_NO_MOD
 , "\033[18;2~", 0, 0},
 
-425 { 
+426 { 
 XK_F20
 , 
 XK_NO_MOD
 , "\033[19;2~", 0, 0},
 
-426 { 
+427 { 
 XK_F21
 , 
 XK_NO_MOD
 , "\033[20;2~", 0, 0},
 
-427 { 
+428 { 
 XK_F22
 , 
 XK_NO_MOD
 , "\033[21;2~", 0, 0},
 
-428 { 
+429 { 
 XK_F23
 , 
 XK_NO_MOD
 , "\033[23;2~", 0, 0},
 
-429 { 
+430 { 
 XK_F24
 , 
 XK_NO_MOD
 , "\033[24;2~", 0, 0},
 
-430 { 
+431 { 
 XK_F25
 , 
 XK_NO_MOD
 , "\033[1;5P", 0, 0},
 
-431 { 
+432 { 
 XK_F26
 , 
 XK_NO_MOD
 , "\033[1;5Q", 0, 0},
 
-432 { 
+433 { 
 XK_F27
 , 
 XK_NO_MOD
 , "\033[1;5R", 0, 0},
 
-433 { 
+434 { 
 XK_F28
 , 
 XK_NO_MOD
 , "\033[1;5S", 0, 0},
 
-434 { 
+435 { 
 XK_F29
 , 
 XK_NO_MOD
 , "\033[15;5~", 0, 0},
 
-435 { 
+436 { 
 XK_F30
 , 
 XK_NO_MOD
 , "\033[17;5~", 0, 0},
 
-436 { 
+437 { 
 XK_F31
 , 
 XK_NO_MOD
 , "\033[18;5~", 0, 0},
 
-437 { 
+438 { 
 XK_F32
 , 
 XK_NO_MOD
 , "\033[19;5~", 0, 0},
 
-438 { 
+439 { 
 XK_F33
 , 
 XK_NO_MOD
 , "\033[20;5~", 0, 0},
 
-439 { 
+440 { 
 XK_F34
 , 
 XK_NO_MOD
 , "\033[21;5~", 0, 0},
 
-440 { 
+441 { 
 XK_F35
 , 
 XK_NO_MOD
 , "\033[23;5~", 0, 0},
 
-450 
+451 
 uöt
  
 	g£lmasks
 [] = {
 
-451 [
+452 [
 SEL_RECTANGULAR
 ] = 
 Mod1Mask
 ,
 
-458 
+459 
 	gascii_¥öèbÀ
 [] =
 
@@ -23912,6 +23896,28 @@ rows
 1955 
 	}
 }
+
+	@/home/alexlai/.cache/wal/colors-wal-st.h
+
+1 c⁄° *
+	gcﬁ‹«me
+[] = {
+
+31 
+	gdeÁu…bg
+ = 0;
+
+32 
+	gdeÁu…fg
+ = 257;
+
+33 
+	gdeÁu…cs
+ = 258;
+
+34 
+	gdeÁu…rcs
+= 258;
 
 	@/usr/include/X11/XKBlib.h
 
@@ -149304,8 +149310,8 @@ _IOC_SIZESHIFT
 .
 1
 /usr/include
-180
-5287
+181
+5328
 arg.h
 config.def.h
 config.h
@@ -149313,6 +149319,7 @@ st.c
 st.h
 win.h
 x.c
+/home/alexlai/.cache/wal/colors-wal-st.h
 /usr/include/X11/XKBlib.h
 /usr/include/X11/Xatom.h
 /usr/include/X11/Xft/Xft.h

@@ -9,7 +9,7 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[]          = { "monospace:size=13" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -25,30 +25,44 @@ static const char col_cyan[]        = "#005577";
 //};
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 3,       0,           -1 },
-	{ "Zim",      NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "Openbox Logout", NULL,       NULL,       0,            0,           -1 },
+	/* class       instance    title       tags mask     isfloating   monitor */
+	{ "Oblogout",  NULL,       NULL,       0,            1,           -1 },
+  { "Sublime",   NULL,       NULL,       1 << 1,       1,           -1 },
+  { "st",        NULL,     "ranger",     1 << 2,       1,           -1 },
+  { "Thunar",    NULL,       NULL,       1 << 2,       1,           -1 },
+  //{ "tabbed",    NULL,       "zathura",  1 << 2,       0,           -1 }, // FIXME
+  { "Zathura",   NULL,       NULL,       1 << 2,       0,           -1 }, 
+	{ "Firefox",   NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "tor",       NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "Vimb",      NULL,       NULL,       1 << 3,       0,           -1 },
+	//{ "tabbed",   "surf",      NULL,       1 << 3,       0,           -1 }, //FIXME
+	{ "mpv",       NULL,       NULL,       1 << 4,       1,           -1 },
+	//{ "st ",       NULL,    "ncmpcpp",     1 << 4,       1,           -1 }, //FIXME
+	{ "Signal",    NULL,       NULL,       1 << 5,       0,           -1 },
+	{ "weixin",    NULL,       NULL,       1 << 5,       0,           -1 },
+	{ "messenger", NULL,       NULL,       1 << 5,       0,           -1 },
+  { "habitica",  NULL,       NULL,       1 << 6,       1,           -1 },
+	{ "VirtualBox",NULL,       NULL,       1 << 7,       0,           -1 },
+	{ "Zim",       NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "",      tile },    /* first entry is default */
+	{ "",      NULL },    /* no layout function means floating behavior */
+	{ "",      monocle },
 };
 
 /* key definitions */
@@ -71,13 +85,15 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *runfirefoxcmd[]  = { "firefox", NULL };
 static const char *runthunarcmd[]  = { "thunar", NULL };
 //static const char *runzimcmd[]  = { "zim", NULL };
-static const char *runzathuracmd[]  = { "tabbed","-c","zathura","-e", NULL };
+static const char *runzathuracmd[]  = { "tabbed", "-c","zathura","-e", NULL };
 static const char *runvimbcmd[]  = { "tabbed","-c","vimb","-e", NULL };
+static const char *runsurfcmd[]  = { "tabbed","-c","surf","-e", NULL };
 static const char *termtmuxcmd[]  = { "st", "-e", "tmux", NULL };
-static const char *termhtopcmd[]  = { "st", "-e", "htop", NULL };
-static const char *termrangercmd[]  = { "st", "-e", "ranger", NULL };
-static const char *keyboardledoncmd[]  = { "xset","led","on", NULL };
-static const char *keyboardledoffcmd[] = { "xset","led","off", NULL };
+static const char *termhtopcmd[]  = { "st", "-e", "set_color_with", "htop", NULL };
+static const char *termrangercmd[]  = { "st", "-e", "set_color_with", "ranger", NULL };
+static const char *termncmpcppcmd[]  = { "st", "-e", "set_color_with", "ncmpcpp", NULL };
+static const char *keyboardledoncmd[]  = { "xset","led","3", NULL };
+static const char *keyboardledoffcmd[] = { "xset","-led","3", NULL };
 static const char *runoblogoutcmd[] = { "oblogout", NULL}; 
 static const char *touchpadtoggle[] = { "toggletouchpad.sh", NULL};
 static const char *audioraisevolume[] = { "pactl","set-sink-volume","0","+5%", NULL};
@@ -95,11 +111,13 @@ static Key keys[] = {
   { MODKEY|ShiftMask,             XK_Page_Down,spawn,        {.v = runoblogoutcmd} },
   { MODKEY|Mod1Mask,              XK_h,      spawn,          {.v = termhtopcmd} },
   { MODKEY|Mod1Mask,              XK_r,      spawn,          {.v = termrangercmd} },
+  { MODKEY|Mod1Mask,              XK_n,      spawn,          {.v = termncmpcppcmd} },
   { MODKEY|Mod1Mask,              XK_t,      spawn,          {.v = runthunarcmd} },
   { MODKEY|Mod1Mask,              XK_f,      spawn,          {.v = runfirefoxcmd} },
 	{ MODKEY|Mod1Mask,              XK_z,      spawn,          {.v = runzathuracmd} },
 	{ MODKEY|Mod1Mask,              XK_v,      spawn,          {.v = runvimbcmd} },
-	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = dmenucmd} },
+	{ MODKEY|Mod1Mask,              XK_s,      spawn,          {.v = runsurfcmd} },
+	//{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = dmenucmd} },
 	{ MODKEY,                       XK_d,      spawn,          {.v = rofiruncmd} },
 	{ MODKEY,                       XK_w,      spawn,          {.v = rofiwincmd} },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
@@ -124,7 +142,7 @@ static Key keys[] = {
   { MODKEY,                       XK_minus,  incnmaster,     {.i = -1 } },
   { MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY,                       XK_c,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
@@ -157,7 +175,7 @@ static Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
-	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+	{ ClkStatusText,        0,              Button2,        spawn,          {.v = rofiruncmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
