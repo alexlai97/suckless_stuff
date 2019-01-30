@@ -17,7 +17,7 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 
-#include "/home/alexlai/.cache/wal/colors-wal-dwm.h"
+#include "./colors.h"
 //static const char *colors[][3]      = {
 //	/*               fg         bg         border   */
 //	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -25,7 +25,7 @@ static const char col_cyan[]        = "#005577";
 //};
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -40,6 +40,7 @@ static const Rule rules[] = {
   //{ "tabbed",    NULL,       "zathura",  1 << 2,       0,           -1 }, // FIXME
   { "Zathura",   NULL,       NULL,       1 << 2,       0,           -1 }, 
 	{ "Firefox",   NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "Chromium",  NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "tor",       NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "Vimb",      NULL,       NULL,       1 << 3,       0,           -1 },
 	//{ "tabbed",   "surf",      NULL,       1 << 3,       0,           -1 }, //FIXME
@@ -47,8 +48,13 @@ static const Rule rules[] = {
 	//{ "st ",       NULL,    "ncmpcpp",     1 << 4,       1,           -1 }, //FIXME
 	{ "Signal",    NULL,       NULL,       1 << 5,       0,           -1 },
 	{ "weixin",    NULL,       NULL,       1 << 5,       0,           -1 },
+	{ "kingsforum",NULL,       NULL,       1 << 5,       0,           -1 },
 	{ "messenger", NULL,       NULL,       1 << 5,       0,           -1 },
   { "habitica",  NULL,       NULL,       1 << 6,       1,           -1 },
+  { "Citra",  NULL,       NULL,       1 << 6,       1,           -1 },
+  { "Fluorine",  NULL,       NULL,       1 << 6,       1,           -1 },
+  { "Technic",  NULL,       NULL,       1 << 6,       1,           -1 },
+  { "Minecraft",  NULL,       NULL,       1 << 6,       1,           -1 },
 	{ "VirtualBox",NULL,       NULL,       1 << 7,       0,           -1 },
 	{ "Zim",       NULL,       NULL,       1 << 8,       0,           -1 },
 };
@@ -81,17 +87,17 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *rofiruncmd[] = { "rofi","-show","run", NULL };
 static const char *rofiwincmd[] = { "rofi","-show", NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *runfirefoxcmd[]  = { "firefox", NULL };
+static const char *termcmd[]  = { "/home/alex/bin/st", NULL };
+static const char *runfirefoxcmd[]  = { "firefox-bin", NULL };
 static const char *runthunarcmd[]  = { "thunar", NULL };
 //static const char *runzimcmd[]  = { "zim", NULL };
-static const char *runzathuracmd[]  = { "tabbed", "-c","zathura","-e", NULL };
-static const char *runvimbcmd[]  = { "tabbed","-c","vimb","-e", NULL };
-static const char *runsurfcmd[]  = { "tabbed","-c","surf","-e", NULL };
-static const char *termtmuxcmd[]  = { "st", "-e", "tmux", NULL };
-static const char *termhtopcmd[]  = { "st", "-e", "set_color_with", "htop", NULL };
-static const char *termrangercmd[]  = { "st", "-e", "set_color_with", "ranger", NULL };
-static const char *termncmpcppcmd[]  = { "st", "-e", "set_color_with", "ncmpcpp", NULL };
+static const char *runzathuracmd[]  = { "/home/alex/bin/tabbed", "-c","zathura","-e", NULL };
+static const char *runvimbcmd[]  = { "/home/alex/bin/tabbed","-c","vimb","-e", NULL };
+static const char *runsurfcmd[]  = { "surf-open.sh", NULL };
+static const char *termtmuxcmd[]  = { "/home/alex/bin/st", "-e", "tmux", NULL };
+static const char *termhtopcmd[]  = { "/home/alex/bin/st", "-e", "set_color_with", "htop", NULL };
+static const char *termrangercmd[]  = { "/home/alex/bin/st", "-e", "set_color_with", "ranger", NULL };
+static const char *termncmpcppcmd[]  = { "/home/alex/bin/st", "-e", "set_color_with", "ncmpcpp", NULL };
 static const char *keyboardledoncmd[]  = { "xset","led","3", NULL };
 static const char *keyboardledoffcmd[] = { "xset","-led","3", NULL };
 static const char *runoblogoutcmd[] = { "oblogout", NULL}; 

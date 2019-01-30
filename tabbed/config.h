@@ -2,7 +2,7 @@
 
 /* appearance */
 static const char font[]        = "monospace:size=9";
-#include "/home/alexlai/.cache/wal/colors-wal-tabbed.h"
+#include "./colors.h"
 //static const char* normbgcolor  = "#222222";
 //static const char* normfgcolor  = "#cccccc";
 //static const char* selbgcolor   = "#555555";
