@@ -4,7 +4,7 @@ VERSION = 4
 # Customize below to fit your system
 
 # paths
-PREFIX = /home/alexlai
+PREFIX = /home/alex
 MANPREFIX = $(PREFIX)/share/man
 
 # flags

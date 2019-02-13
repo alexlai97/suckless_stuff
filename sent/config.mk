@@ -4,7 +4,7 @@ VERSION = 1
 # Customize below to fit your system
 
 # paths
-PREFIX = /home/alexlai
+PREFIX = /home/alex
 MANPREFIX = ${PREFIX}/share/man
 
 X11INC = /usr/X11R6/include
