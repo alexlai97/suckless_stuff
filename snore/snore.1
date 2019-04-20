@@ -1,0 +1,36 @@
+.TH SNORE 1 snore\-VERSION
+.SH NAME
+snore \- sleep with feedback
+.SH SYNOPSIS
+.B snore
+.RB [ \-v ]
+.RI [ NUMBER [ SUFFIX ]... ]
+.SH DESCRIPTION
+.B snore
+pause for NUMBER seconds. SUFFIX may be 's' for seconds (default), 'm' for
+minutes, 'h' four hours or 'd' for days. Given two or more arguments, pause for
+the amount of time specified by the sum of their values. A visual feedback is
+given by printing the flowing of time in both ascending and descending order.
+If no arguments are given,
+.B snore
+pauses for 1d (one day).
+.SH SHORTCUTS
+.TP
+.B Enter or Ctrl-j
+output the split time
+.TP
+.B Ctrl-s
+pause
+.TP
+.B Ctrl-q
+resume
+.TP
+.B Ctrl-c
+stop and exit
+.SH AUTHORS
+See the LICENSE file for the authors.
+.SH LICENSE
+See the LICENSE file for the terms of redistribution.
+.SH SEE ALSO
+.BR sleep (1),
+.BR nanosleep (2)

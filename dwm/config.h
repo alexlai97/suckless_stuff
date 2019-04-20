@@ -67,8 +67,9 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "",      tile },    /* first entry is default */
-	{ "",      NULL },    /* no layout function means floating behavior */
-	{ "",      monocle },
+	{ "",      NULL },    /* no layout function means floating behavior */
+
+	{ "",      monocle },
 };
 
 /* key definitions */
@@ -86,6 +87,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *rofiruncmd[] = { "/home/alex/.scripts/zsh_rofi","-show","run", NULL };
+static const char *extendedrofiruncmd[] = { "/home/alex/.scripts/dmenu_extended_run", NULL };
+static const char *timercmd[] = { "/home/alex/.scripts/timer" , NULL };
 static const char *dmenuextendedruncmd[] = { "/home/alex/.scripts/dmenu_extended_run", NULL };
 static const char *termcmd[]  = { "/home/alex/bin/st", NULL };
 static const char *runfirefoxcmd[]  = { "/home/alex/.scripts/firefox", NULL };
@@ -95,9 +98,9 @@ static const char *runzathuracmd[]  = { "/home/alex/bin/tabbed", "-c","zathura",
 static const char *runvimbcmd[]  = { "/home/alex/bin/tabbed","-c","vimb","-e", NULL };
 static const char *runsurfcmd[]  = { "surf-open.sh", NULL };
 static const char *termtmuxcmd[]  = { "/home/alex/bin/st", "-e", "tmux", NULL };
-static const char *termhtopcmd[]  = { "/home/alex/bin/st", "-e", "set_color_with", "htop", NULL };
-static const char *termrangercmd[]  = { "/home/alex/bin/st", "-e", "set_color_with", "ranger", NULL };
-static const char *termncmpcppcmd[]  = { "/home/alex/bin/st", "-e", "set_color_with", "ncmpcpp", NULL };
+static const char *termhtopcmd[]  = { "/home/alex/bin/st", "-e", /* "set_color_with", */ "htop", NULL };
+static const char *termrangercmd[]  = { "/home/alex/bin/st", "-e", /* "set_color_with", */ "ranger", NULL };
+static const char *termncmpcppcmd[]  = { "/home/alex/bin/st", "-e", /* "set_color_with", */ "ncmpcpp", NULL };
 static const char *keyboardledoncmd[]  = { "xset","led","3", NULL };
 static const char *keyboardledoffcmd[] = { "xset","-led","3", NULL };
 static const char *runoblogoutcmd[] = { "oblogout", NULL}; 
@@ -111,6 +114,16 @@ static const char *audiotoggleplaypause[] = { "mpc", "toggle", NULL};
 static const char *audiostop[] = { "mpc", "stop", NULL};
 static const char *audionext[] = { "mpc", "next", NULL};
 static const char *audioprev[] = { "mpc", "prev", NULL};
+static const char *screenshotcmd[] = { "/home/alex/.scripts/screenshot.sh", NULL };
+static const char *runscreenshotrootcmd[] = { "/home/alex/.scripts/screenshot.sh", "root", NULL };
+static const char *runscreenshotwindowcmd[] = { "/home/alex/.scripts/screenshot.sh", "window", NULL };
+static const char *rundynamicwallpapercmd[] = { "/home/alex/.scripts/dynamicwallpaper", NULL };
+static const char *runshowweathercmd[] = { "/home/alex/.scripts/weather", "show", NULL };
+static const char *runrightclickemenu[] = { "/home/alex/.scripts/rightclickmenu", NULL };
+/* static const char *runkillwindowcmd[] = { "xkill", NULL }; does not work */
+/* static const char *runsimplelockcmd[] = { "slock", NULL }; */
+
+
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -130,6 +143,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termtmuxcmd } },
 	{ 0,                            XK_Scroll_Lock, spawn,     {.v = keyboardledoncmd } },
 	{ ShiftMask,                    XK_Scroll_Lock, spawn,     {.v = keyboardledoffcmd } },
+  // 'xmodmap -pk' can search keysyms
   { 0,                            0x1008ffa9,spawn,          {.v = touchpadtoggle } },
   { 0,                            0x1008ff13,spawn,          {.v = audioraisevolume } },
   { 0,                            0x1008ff12,spawn,          {.v = audiomute } },
@@ -140,7 +154,9 @@ static Key keys[] = {
   { 0,                            0x1008ff15,spawn,          {.v = audiostop } },
   { 0,                            0x1008ff16,spawn,          {.v = audioprev } },
   { 0,                            0x1008ff17,spawn,          {.v = audionext } },
-  { 0,                            0x1008ff2a,spawn,          {.v = runoblogoutcmd } },
+  { 0,       /* power off button */0x1008ff2a,spawn,          {.v = runoblogoutcmd } },
+  { ShiftMask,                    XK_Print,  spawn,           {.v = runscreenshotrootcmd } },
+  { 0,                            XK_Print,  spawn,           {.v = runscreenshotwindowcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -180,14 +196,23 @@ static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
-	{ ClkStatusText,        0,              Button2,        spawn,          {.v = rofiruncmd } },
+	{ ClkWinTitle,          0,              Button1,        zoom,           {0} },
+	{ ClkWinTitle,          0,              Button2,        spawn,          {.v = screenshotcmd } },
+	{ ClkWinTitle,          Mod1Mask,       Button2,        spawn,          {.v = rundynamicwallpapercmd } },
+	{ ClkStatusText,        0,              Button1,        spawn,          {.v = extendedrofiruncmd } },
+	/* { ClkStatusText,        MODKEY,         Button2,        spawn,         {.v = runkillwindowcmd } }, */
+	{ ClkStatusText,        0,              Button2,        spawn,          {.v = runoblogoutcmd } },
+	/* { ClkStatusText,        MODKEY,         Button3,        spawn,         {.v = runsimplelockcmd } }, */
+	{ ClkStatusText,        0,              Button3,        spawn,          {.v = runrightclickemenu } },
+	{ ClkStatusText,        ShiftMask,      Button3,        spawn,          {.v = runshowweathercmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
 	{ ClkTagBar,            0,              Button1,        view,           {0} },
+	{ ClkTagBar,            0,              Button2,        spawn,          { .v = termcmd } },
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+
 
